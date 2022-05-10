@@ -1,0 +1,155 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 999;
+  padding: 4px 0px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__link > img {
+    width: 130px;
+  }
+
+  &__navbar {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__navbar_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__navbar_list_item {
+    padding: 4px 10px;
+  }
+  &__navbar_list_item:hover {
+    padding: 4px 10px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 4px;
+    transition: all 0.4s ease-in;
+  }
+
+  &__navbar_list_item + &__navbar_list_item {
+    margin-left: 20px;
+  }
+
+  &__navbar_list_item_link {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(13, 13, 13);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list_item + &__list_item {
+    margin-left: 20px;
+  }
+
+  &__list_item_button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 4px 10px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  &__list_item_button:hover {
+    padding: 4px 10px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 4px;
+    transition: all 0.4s ease-in;
+  }
+
+  //   MENU BAR
+  &__menuBar {
+    position: relative;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    width: 30%;
+    background-color: rgb(244, 244, 244);
+    min-height: 100vh;
+    padding: 60px 20px 20px 20px;
+  }
+
+  &__menuBar_lists {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
+
+  &__menuBar_lists_item {
+    padding: 6px 10px;
+  }
+
+  &__menuBar_lists_item:hover {
+    padding: 6px 10px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 4px;
+    transition: all 0.4s ease-in;
+  }
+
+  &__menuBar_lists_item + &__menuBar_lists_item {
+    margin-top: 13px;
+  }
+
+  &__menuBar_lists_item_link {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(27, 27, 27);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 1077px) {
+    &__navbar_list {
+      display: none;
+    }
+
+    &__list_item_butNone {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  // &__navbar_Activelist{
+
+  // }
+}
+
+.header__menuBar_lists::-webkit-scrollbar {
+  width: 1px;
+}
