@@ -4,6 +4,7 @@ import Model3 from "./Pages/Model3/Model3";
 import ModelS from "./Pages/ModelS/ModelS";
 import ModelX from "./Pages/ModelX/ModelX";
 import ModelY from "./Pages/ModelY/ModelY";
+import SolarPanels from "./Pages/SolarPanels/SolarPanels";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ModelY />
       <ModelS />
       <ModelX/>
+      <SolarPanels/>
     </div>
   );
 }
