@@ -1,0 +1,94 @@
+.modelx {
+  margin: 0;
+  padding: 0;
+  background-image: url(../../assets/img/images4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__heading {
+    margin: 0;
+    padding-top: 6%;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  &__desc {
+    margin: 0;
+    padding-top: 17px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #696969;
+  }
+
+  &__link {
+    color: #696969;
+  }
+
+  &__buttons {
+    margin: 0;
+    padding-top: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__buttons_btn {
+    margin: 0;
+    padding: 10px 20px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__buttons_btn:nth-child(2) {
+    background-color: #afafaf;
+    margin-left: 15px;
+  }
+
+  @media screen and (max-width: 655px) {
+    &__heading {
+      padding-top: 17%;
+    }
+    &__buttons {
+      padding-top: 34%;
+    }
+
+    &__buttons_btn {
+      width: 100%;
+    }
+
+    &__buttons_btn + &__buttons_btn {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    &__heading {
+      padding-top: 22%;
+    }
+    &__buttons {
+      padding-top: 40%;
+    }
+  }
+}
