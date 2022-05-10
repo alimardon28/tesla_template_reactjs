@@ -3,9 +3,9 @@ import '../ModelS/_ModelS.scss';
 
 const ModelS = () => {
     return (
-        <div>
-
-        </div>
+      <div className="models">
+        
+      </div>
     );
 }
 
