@@ -5,6 +5,7 @@ import ModelS from "./Pages/ModelS/ModelS";
 import ModelX from "./Pages/ModelX/ModelX";
 import ModelY from "./Pages/ModelY/ModelY";
 import SolarPanels from "./Pages/SolarPanels/SolarPanels";
+import SolarRoof from "./Pages/SolarRoof/SolarRoof";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ModelS />
       <ModelX/>
       <SolarPanels/>
+      <SolarRoof/>
     </div>
   );
 }
