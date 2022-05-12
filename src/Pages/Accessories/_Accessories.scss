@@ -70,21 +70,30 @@
       padding-top: 34%;
     }
 
-    &__buttons_btn {
-      width: 100%;
-    }
-
     &__buttons_btn + &__buttons_btn {
       margin-top: 20px;
+      width: 300px !important;
+    }
+    &__buttons_btn:nth-child(2) {
+
+      margin-left: 0px;
     }
   }
 
   @media screen and (max-width: 490px) {
     &__heading {
-      padding-top: 22%;
+      padding-top:34%;
     }
     &__buttons {
       padding-top: 40%;
+    }
+  }
+  @media screen and (max-width: 490px) {
+    &__heading {
+      padding-top:38%;
+    }
+    &__buttons {
+      padding-top: 45%;
     }
   }
 }

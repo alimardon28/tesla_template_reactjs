@@ -80,6 +80,7 @@
 
     &__buttons_btn + &__buttons_btn {
       margin-top: 20px;
+      margin-left: 0;
     }
   }
 
@@ -89,6 +90,14 @@
     }
     &__buttons {
       padding-top: 40%;
+    }
+  }
+  @media screen and (max-width: 490px) {
+    &__heading {
+      padding-top:38%;
+    }
+    &__buttons {
+      padding-top: 45%;
     }
   }
 }
