@@ -1,46 +1,46 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "../Header/_Header.scss";
 import icon from "../../assets/svg/icon.svg";
-import logo from "../../assets/svg/logo.svg";
 
 const Header = () => {
   return (
     <div className="header">
       <div className="container header__container">
-        <a href="/" className="header__link">
+        <Link to='/' className="header__link">
           <img src={icon} alt="tesla icon " />
-        </a>
+        </Link>
         <nav className="header__navbar">
           <ul className="header__navbar_list header__navbar_Activelist">
             <li className="header__navbar_list_item">
-              <a href="#" className="header__navbar_list_item_link">
+              <Link to='/models' className="header__navbar_list_item_link">
                 Model S
-              </a>
+              </Link>
             </li>
             <li className="header__navbar_list_item">
-              <a href="#" className="header__navbar_list_item_link">
+              <Link to='/model3' className="header__navbar_list_item_link">
                 Model 3
-              </a>
+              </Link>
             </li>
             <li className="header__navbar_list_item">
-              <a href="#" className="header__navbar_list_item_link">
+              <Link to='/modelx' className="header__navbar_list_item_link">
                 Model X
-              </a>
+              </Link>
             </li>
             <li className="header__navbar_list_item">
-              <a href="#" className="header__navbar_list_item_link">
+              <Link to='/modely' className="header__navbar_list_item_link">
                 Model Y
-              </a>
+              </Link>
             </li>
             <li className="header__navbar_list_item">
-              <a href="#" className="header__navbar_list_item_link">
+              <Link to='/solaroof' className="header__navbar_list_item_link">
                 Solar Roof
-              </a>
+              </Link>
             </li>
             <li className="header__navbar_list_item">
-              <a href="#" className="header__navbar_list_item_link">
+              <Link to='/solarpanels' className="header__navbar_list_item_link">
                 Solar Panels
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
